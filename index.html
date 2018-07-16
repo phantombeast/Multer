@@ -19,7 +19,7 @@
 <body>
 
 <div class="card" style="width: 18rem">
-    <img class="card-img-top" src="" alt="Card image cap">
+    <img class="card-img-top" src="https://cdn.pixabay.com/photo/2017/03/27/12/50/flower-2178507_1280.jpg" alt="Card image cap">
 
     <div class="card-body">
 
@@ -34,7 +34,7 @@
                 <input type="file" name="profilepic" class="custom-file-input" id="validatedCustomFile" required>
 
                 <label class="custom-file-label" for="validatedCustomFile">Choose File....</label>
-                <p class="red">Error Message will go here</p>
+                <p class="red"><%= typeof message== 'undefined' ?'' :message %></p>
             </div>
             <br>
 
